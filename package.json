@@ -15,6 +15,7 @@
     "url": "git+https://github.com/rizentium/ngx-stringly.git"
   },
   "keywords": [
+    "angular",
     "string",
     "string-manipulation",
     "string-matching",
