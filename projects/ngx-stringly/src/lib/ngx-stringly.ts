@@ -1,20 +1,35 @@
+/**
+ * Public API Surface of ngx-stringly
+ *
+ * @license
+ * Copyright Rizentium. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/rizentium/ngx-stringly/blob/master/LICENSE
+ */
 import { Injectable } from '@angular/core';
 import { StringlyInterface } from '../interfaces/stringly-interface';
 
 @Injectable({
   providedIn: 'root'
 })
+/**
+ * Perform string formatting
+ *
+ * `NgxStringly` handle all of string formatting.
+ */
 export class NgxStringly {
-
-  constructor() { }
-
-  static parsing(text: string, find: string, identical: boolean = false): StringlyInterface {
-    const result: StringlyInterface = {
-      prefix: '',
-      content: '',
-      suffix: ''
-    };
-
+  /**
+   * Sending `test` and `find` variable and return `StringifyInterface`.
+   *
+   * @param text - Input string for parsing
+   * @param find - Query key for parsing
+   * @param identical - Parsing type
+   *
+   * @return StringlyInterface
+   */
+  public static parsing(text: string, find: string, identical: boolean = false): StringlyInterface {
+    const result = {} as StringlyInterface;
     for (let x = 0; x < text.length + 1 - find.length; x++) {
       if (identical) {
         if (text.substr(x, find.length) === find) {
@@ -30,7 +45,6 @@ export class NgxStringly {
         }
       }
     }
-
     return result;
   }
 }
