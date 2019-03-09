@@ -13,9 +13,7 @@ export class AppComponent {
   find: string;
   result: StringlyInterface;
 
-  constructor(public stringly: NgxStringly) {
-
-  }
+  constructor() {}
 
   onChanged() {
     this.result = NgxStringly.parsing(this.text, this.find, false);
