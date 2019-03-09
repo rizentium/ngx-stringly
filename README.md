@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/rizentium/ngx-stringly.svg?branch=master)](https://travis-ci.org/rizentium/ngx-stringly)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/rizentium/ngx-stringly.svg)
+![GitHub](https://img.shields.io/github/license/rizentium/ngx-stringly.svg)
 
 # NgxStringly
 
