@@ -12,6 +12,7 @@
       "element",
       "lib",
       "kebab-case"
-    ]
+    ],
+    "completed-docs": [true, "enums", "functions", "methods"]
   }
 }
