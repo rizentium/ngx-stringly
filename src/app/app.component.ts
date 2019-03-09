@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NgxStringlyService } from '../../projects/ngx-stringly/src/lib/ngx-stringly.service';
-import {StringlyInterface} from '../../projects/ngx-stringly/src/interfaces/stringly-interface';
+import { NgxStringly } from '../../projects/ngx-stringly/src/lib/ngx-stringly';
+import { StringlyInterface } from '../../projects/ngx-stringly/src/interfaces/stringly-interface';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +13,11 @@ export class AppComponent {
   find: string;
   result: StringlyInterface;
 
-  constructor(public stringly: NgxStringlyService) {
+  constructor(public stringly: NgxStringly) {
 
   }
 
   onChanged() {
-    this.result = this.stringly.parsing(this.text, this.find, false);
+    this.result = NgxStringly.parsing(this.text, this.find, false);
   }
 }
