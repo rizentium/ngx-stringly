@@ -1,4 +1,4 @@
-<p align='center' style='font-weight:bold;'>ngx-stringly</p>
+<p align='center'><b>ngx-stringly</b></p>
 <p align='center'>Angular library for separating string into prefix, matched and suffix by search matching</p>
 <h3 align='center'>
 
@@ -9,11 +9,23 @@
 </h3>
 
 ## Installation
-For installation
+First, save `ngx-stringly` to your dependencies.
 ```bash
 npm install ngx-stringly --save
 ```
 
+## How it Works
+Import `ngx-stringly` to your component.
+```typescript
+import { NgxStringly } from '@rizentium/ngx-stringly';
+```
+Use `NgxStringly` in your functions
+```typescript
+const text = 'The quick brown fox jumps over the lazy dog';
+const find = 'lazy';
+
+this.result = NgxStringly.parsing(text, find, false);
+```
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
