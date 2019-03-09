@@ -1,6 +1,7 @@
 {
   "name": "ngx-stringly",
   "version": "1.0.0-alpha",
+  "description": "Angular library for separating string into prefix, matched and suffix by search matching",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +10,23 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizentium/ngx-stringly.git"
+  },
+  "keywords": [
+    "string",
+    "string-manipulation",
+    "string-matching",
+    "string-formatter",
+    "string-search"
+  ],
+  "author": "Rizentium <rizentium@gmail.com> (https://rizentium.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rizentium/ngx-stringly/issues"
+  },
+  "homepage": "https://github.com/rizentium/ngx-stringly#readme",
   "dependencies": {
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
