@@ -1,10 +1,18 @@
-[![Build Status](https://travis-ci.org/rizentium/ngx-stringly.svg?branch=master)](https://travis-ci.org/rizentium/ngx-stringly)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/rizentium/ngx-stringly.svg)
-![GitHub](https://img.shields.io/github/license/rizentium/ngx-stringly.svg)
+<h1 align='center'>ngx-stringly</h1>
+<p align='center'>Angular library for separating string into prefix, matched and suffix by search matching</p>
+<h3 align='center'>
 
-# NgxStringly
+  [![Build Status](https://travis-ci.org/rizentium/ngx-stringly.svg?branch=master)](https://travis-ci.org/rizentium/ngx-stringly)
+  ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/rizentium/ngx-stringly.svg)
+  ![GitHub](https://img.shields.io/github/license/rizentium/ngx-stringly.svg)
+  
+</h3>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+## Installation
+For installation
+```bash
+npm install ngx-stringly --save
+```
 
 ## Development server
 
