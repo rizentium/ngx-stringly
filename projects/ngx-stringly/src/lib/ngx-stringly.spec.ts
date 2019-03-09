@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgxStringlyService } from './ngx-stringly.service';
+import { NgxStringly } from './ngx-stringly';
 
-describe('NgxStringlyService', () => {
+describe('NgxStringly', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: NgxStringlyService = TestBed.get(NgxStringlyService);
+    const service: NgxStringly = TestBed.get(NgxStringly);
     expect(service).toBeTruthy();
   });
 });

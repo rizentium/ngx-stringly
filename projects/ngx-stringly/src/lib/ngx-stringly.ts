@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import {StringlyInterface} from '../interfaces/stringly-interface';
+import { StringlyInterface } from '../interfaces/stringly-interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NgxStringlyService {
+export class NgxStringly {
 
   constructor() { }
 
-  public parsing(text: string, find: string, identical: boolean = false): StringlyInterface {
+  static parsing(text: string, find: string, identical: boolean = false): StringlyInterface {
     const result: StringlyInterface = {
       prefix: '',
       content: '',
