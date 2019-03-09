@@ -1,4 +1,4 @@
-<h1 align='center'>ngx-stringly</h1>
+<p align='center' style='font-weight:bold;'>ngx-stringly</p>
 <p align='center'>Angular library for separating string into prefix, matched and suffix by search matching</p>
 <h3 align='center'>
 
