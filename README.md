@@ -17,9 +17,9 @@ npm install ngx-stringly --save
 ## How it Works
 Import `ngx-stringly` to your component.
 ```typescript
-import { NgxStringly } from '@rizentium/ngx-stringly';
+import { NgxStringly } from 'ngx-stringly';
 ```
-Use `NgxStringly` in your functions
+Use `Index` in your functions
 ```typescript
 const text = 'The quick brown fox jumps over the lazy dog.';
 const find = 'lazy';
@@ -35,16 +35,4 @@ Result will be
 }
 ```
 ## Run Example
-Clone the repository
-```bash
-git clone https://github.com/rizentium/ngx-stringly.git
-```
-Open `ngx-stringly` directory
-```bash
-cd ngx-stringly
-```
-Run server
-```bash
-ng serve
-```
-And navigate your browser to `http://localhost:4200`
+Coming Soon

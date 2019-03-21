@@ -1,9 +1,0 @@
-{
-  "name": "ngx-stringly",
-  "version": "1.0.0-alpha",
-  "private": true,
-  "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
-  }
-}

@@ -7,18 +7,13 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/rizentium/ngx-stringly/blob/master/LICENSE
  */
-import { Injectable } from '@angular/core';
-import { StringlyInterface } from '../interfaces/stringly-interface';
-
-@Injectable({
-  providedIn: 'root'
-})
+import { StringlyInterface } from './stringly-interface';
 /**
  * Perform string formatting
  *
- * `NgxStringly` handle all of string formatting.
+ * `Index` handle all of string formatting.
  */
-export class NgxStringly {
+export default class NgxStringly {
   /**
    * Sending `test` and `find` variable and return `StringifyInterface`.
    *
@@ -35,13 +30,13 @@ export class NgxStringly {
         if (text.substr(x, find.length) === find) {
           result.prefix = text.substr(0, x);
           result.content = text.substr(x, find.length);
-          result.suffix = text.substr((x + find.length), text.length);
+          result.suffix = text.substr(x + find.length, text.length);
         }
       } else {
         if (text.substr(x, find.length).toUpperCase() === find.toUpperCase()) {
           result.prefix = text.substr(0, x);
           result.content = text.substr(x, find.length);
-          result.suffix = text.substr((x + find.length), text.length);
+          result.suffix = text.substr(x + find.length, text.length);
         }
       }
     }
