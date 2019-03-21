@@ -17,7 +17,7 @@ npm install ngx-stringly --save
 ## How it Works
 Import `ngx-stringly` to your component.
 ```typescript
-import { NgxStringly } from 'ngx-stringly';
+import { NgxStringly } from 'ngx-stringly/lib/ngx-stringly';
 ```
 Use `Index` in your functions
 ```typescript
