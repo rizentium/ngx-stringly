@@ -35,4 +35,23 @@ Result will be
 }
 ```
 ## Run Example
-Coming Soon
+I'm using angular 7 for example.
+
+
+Clone the repository
+```bash
+git clone https://github.com/rizentium/ngx-stringly.git
+```
+Open `example` directory
+```bash
+cd example
+```
+Install packages
+```bash
+npm install
+```
+Run server
+```bash
+ng serve
+```
+And navigate your browser to `http://localhost:4200`
