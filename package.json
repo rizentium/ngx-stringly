@@ -1,6 +1,6 @@
 {
   "name": "ngx-stringly",
-  "version": "2.0.0-alpha",
+  "version": "2.0.0-alpha.1",
   "description": "Angular library for separating string into prefix, matched and suffix by search matching",
   "main": "index.js",
   "scripts": {

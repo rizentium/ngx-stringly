@@ -2,20 +2,24 @@
  * Public API Surface of ngx-stringly
  *
  * @license
- * Copyright Rizentium. All Rights Reserved.
+ * Copyright rizentium. All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/rizentium/ngx-stringly/blob/master/LICENSE
  */
-import { StringlyInterface } from './stringly-interface';
+export interface InterfaceSearcher {
+  prefix: string;
+  content: string;
+  suffix: string;
+}
 /**
  * Perform string formatting
  *
- * `Index` handle all of string formatting.
+ * `Searcher` handle all of string search.
  */
-export default class NgxStringly {
+export default class Searcher {
   /**
-   * Sending `test` and `find` variable and return `StringifyInterface`.
+   * Sending `text` and `find` variable and return `InterfaceSearcher`.
    *
    * @param text - Input string for parsing
    * @param find - Query key for parsing
@@ -23,8 +27,8 @@ export default class NgxStringly {
    *
    * @return StringlyInterface
    */
-  public static parsing(text: string, find: string, identical: boolean = false): StringlyInterface {
-    const result = {} as StringlyInterface;
+  public static parse(text: string, find: string, identical: boolean = false): InterfaceSearcher {
+    const result = {} as InterfaceSearcher;
     for (let x = 0; x < text.length + 1 - find.length; x++) {
       if (identical) {
         if (text.substr(x, find.length) === find) {
