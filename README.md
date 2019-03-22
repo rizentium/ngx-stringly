@@ -3,6 +3,7 @@
 <h3 align='center'>
 
   [![Build Status](https://travis-ci.org/rizentium/ngx-stringly.svg?branch=master)](https://travis-ci.org/rizentium/ngx-stringly)
+  ![NPM tag (latest SemVer)](https://img.shields.io/npm/v/ngx-stringly.svg)
   ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/rizentium/ngx-stringly.svg)
   ![GitHub](https://img.shields.io/github/license/rizentium/ngx-stringly.svg)
   
@@ -14,17 +15,17 @@ First, save `ngx-stringly` to your dependencies.
 npm install ngx-stringly --save
 ```
 
-## How it Works
+## Usage
 Import `ngx-stringly` to your component.
 ```typescript
-import { NgxStringly } from '@rizentium/ngx-stringly';
+import { Searcher } from 'ngx-stringly/ngx';
 ```
-Use `NgxStringly` in your functions
+Use `Index` in your functions
 ```typescript
 const text = 'The quick brown fox jumps over the lazy dog.';
 const find = 'lazy';
 
-this.result = NgxStringly.parsing(text, find, false);
+this.result = Searcher.parse(text, find, false);
 ```
 Result will be
 ```json
@@ -35,13 +36,20 @@ Result will be
 }
 ```
 ## Run Example
+I'm using angular 7 for example.
+
+
 Clone the repository
 ```bash
 git clone https://github.com/rizentium/ngx-stringly.git
 ```
-Open `ngx-stringly` directory
+Open `example` directory
 ```bash
-cd ngx-stringly
+cd example
+```
+Install packages
+```bash
+npm install
 ```
 Run server
 ```bash
