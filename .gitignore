@@ -46,5 +46,5 @@ testem.log
 Thumbs.db
 
 # build
-/lib
+/ngx
 *-lock.json

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxStringly } from 'ngx-stringly/lib/ngx-stringly';
-import { StringlyInterface } from 'ngx-stringly/lib/stringly-interface';
+import { Searcher } from 'ngx-stringly/ngx';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +10,11 @@ export class AppComponent {
   title = 'ngx-stringly example';
   text = 'The quick brown fox jumps over the lazy dog';
   find: string;
-  result: StringlyInterface;
+  result: Searcher;
 
   constructor() {}
 
   onChanged() {
-    this.result = NgxStringly.parsing(this.text, this.find, false);
+    this.result = Searcher.parse(this.text, this.find, false);
   }
 }

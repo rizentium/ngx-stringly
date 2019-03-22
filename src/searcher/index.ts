@@ -7,19 +7,17 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/rizentium/ngx-stringly/blob/master/LICENSE
  */
-declare global {
-    interface InterfaceSearcher {
-        prefix: string;
-        content: string;
-        suffix: string;
-    }
+interface ISearcher {
+  prefix: string;
+  content: string;
+  suffix: string;
 }
 /**
  * Perform string formatting
  *
  * `Searcher` handle all of string search.
  */
-export class Searcher {
+class Searcher {
   /**
    * Sending `text` and `find` variable and return `InterfaceSearcher`.
    *
@@ -29,8 +27,8 @@ export class Searcher {
    *
    * @return StringlyInterface
    */
-  public static parse(text: string, find: string, identical: boolean = false): InterfaceSearcher {
-    const result = {} as InterfaceSearcher;
+  public static parse(text: string, find: string, identical: boolean = false): ISearcher {
+    const result = {} as ISearcher;
     for (let x = 0; x < text.length + 1 - find.length; x++) {
       if (identical) {
         if (text.substr(x, find.length) === find) {
@@ -49,3 +47,4 @@ export class Searcher {
     return result;
   }
 }
+export { Searcher, ISearcher };

@@ -1,4 +1,4 @@
-import Searcher from '../searcher';
+import { Searcher } from '../';
 
 test('Parsing non-identical', () => {
   expect(Searcher.parse('The quick brown fox jumps over the lazy dog.', 'Lazy')).toEqual({

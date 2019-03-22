@@ -17,14 +17,14 @@ npm install ngx-stringly --save
 ## How it Works
 Import `ngx-stringly` to your component.
 ```typescript
-import { NgxStringly } from 'ngx-stringly/lib/ngx-stringly';
+import { Searcher } from 'ngx-stringly/ngx';
 ```
 Use `Index` in your functions
 ```typescript
 const text = 'The quick brown fox jumps over the lazy dog.';
 const find = 'lazy';
 
-this.result = NgxStringly.parsing(text, find, false);
+this.result = Searcher.parse(text, find, false);
 ```
 Result will be
 ```json
