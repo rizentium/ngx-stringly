@@ -1,0 +1,6 @@
+{
+  "name": "ngx-stringly/searcher",
+  "typings": "./index.d.ts",
+  "main": "./index.js",
+  "sideEffects": false
+}

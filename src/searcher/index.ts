@@ -7,17 +7,19 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/rizentium/ngx-stringly/blob/master/LICENSE
  */
-export interface InterfaceSearcher {
-  prefix: string;
-  content: string;
-  suffix: string;
+declare global {
+    interface InterfaceSearcher {
+        prefix: string;
+        content: string;
+        suffix: string;
+    }
 }
 /**
  * Perform string formatting
  *
  * `Searcher` handle all of string search.
  */
-export default class Searcher {
+export class Searcher {
   /**
    * Sending `text` and `find` variable and return `InterfaceSearcher`.
    *
