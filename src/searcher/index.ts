@@ -27,20 +27,20 @@ class Searcher {
    *
    * @return StringlyInterface
    */
-  public static parse(text: string, find: string, identical: boolean = false): ISearcher {
+  public static parse(text: string, find: string, identical: boolean = false, trim: boolean = false): ISearcher {
     const result = {} as ISearcher;
     for (let x = 0; x < text.length + 1 - find.length; x++) {
       if (identical) {
         if (text.substr(x, find.length) === find) {
-          result.prefix = text.substr(0, x);
-          result.content = text.substr(x, find.length);
-          result.suffix = text.substr(x + find.length, text.length);
+          result.prefix = trim ? text.substr(0, x).trim() : text.substr(0, x);
+          result.content = trim ? text.substr(x, find.length).trim() : text.substr(x, find.length);
+          result.suffix = trim ? text.substr(x + find.length, text.length).trim() : text.substr(x + find.length, text.length);
         }
       } else {
         if (text.substr(x, find.length).toUpperCase() === find.toUpperCase()) {
-          result.prefix = text.substr(0, x);
-          result.content = text.substr(x, find.length);
-          result.suffix = text.substr(x + find.length, text.length);
+          result.prefix = trim ? text.substr(0, x).trim() : text.substr(0, x);
+          result.content = trim ? text.substr(x, find.length).trim() : text.substr(x, find.length);
+          result.suffix = trim ? text.substr(x + find.length, text.length).trim() : text.substr(x + find.length, text.length);
         }
       }
     }
